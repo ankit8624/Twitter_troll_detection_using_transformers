@@ -1,7 +1,7 @@
 pip==25.0.1
 numpy
+pandas
 pillow
 streamlit
-torch==2.1.2 --no-cache-dir
+torch==2.1.2
 transformers
-pandas
