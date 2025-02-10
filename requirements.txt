@@ -3,5 +3,5 @@ numpy
 pandas
 pillow
 streamlit
-torch
+torch==2.6.0
 transformers
