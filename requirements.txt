@@ -1,15 +1,7 @@
-
-# Essential dependencies
-streamlit==1.32.0  # Use the latest stable version
-
-# PyTorch dependencies
-torch==2.6.0+cu126  # Latest compatible version
-torchvision==0.21.0+cu126
-torchaudio==2.6.0+cu126
-
-# Additional dependencies
-pandas
+pip
 numpy
-scikit-learn
-matplotlib
-seaborn
+pandas
+pillow
+streamlit
+torch
+transformers
