@@ -1,6 +1,7 @@
 import streamlit as st
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, TextClassificationPipeline
+import os
 
 #  Move this to the first Streamlit command
 st.set_page_config(page_title="Twitter Sentiment Analysis", layout="centered")
