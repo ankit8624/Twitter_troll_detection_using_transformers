@@ -10,7 +10,10 @@ id2label = {0: "TROLL", 1: "NEUTRAL", 2: "POSITIVE"}
 label2id = {"TROLL": 0, "NEUTRAL": 1, "POSITIVE": 2}
 
 # Load the tokenizer and model
-MODEL_PATH = "./model_save"  # Update this path if needed
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Get the directory of app.py
+MODEL_PATH = os.path.join(BASE_DIR, "../model_save")
+
+
 st.write("Loading model...")
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
 model = AutoModelForSequenceClassification.from_pretrained(MODEL_PATH, num_labels=3, id2label=id2label, label2id=label2id)
