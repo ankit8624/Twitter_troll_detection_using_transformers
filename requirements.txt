@@ -1,5 +1,6 @@
+numpy
+pillow
 streamlit
-torch==2.0.1
+torch==2.1.2
 transformers
 pandas
-numpy
