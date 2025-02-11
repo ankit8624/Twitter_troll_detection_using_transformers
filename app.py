@@ -11,15 +11,14 @@ id2label = {0: "TROLL", 1: "NEUTRAL", 2: "POSITIVE"}
 label2id = {"TROLL": 0, "NEUTRAL": 1, "POSITIVE": 2}
 
 # Load tokenizer from tokenizer.pkl
-# Load model from model.pkl
-st.write("Loading model...")
-with open("model.pkl", "rb") as model_file:
-    model = pickle.load(model_file)
-
 st.write("Loading tokenizer...")
 with open("tokenizer.pkl", "rb") as tokenizer_file:
     tokenizer = pickle.load(tokenizer_file)
 
+# Load model from model.pkl
+st.write("Loading model...")
+with open("model.pkl", "rb") as model_file:
+    model = pickle.load(model_file)
 
 # Ensure model is in evaluation mode
 model.eval()
