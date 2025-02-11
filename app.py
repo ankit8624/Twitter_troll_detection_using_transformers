@@ -1,23 +1,38 @@
 import streamlit as st
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, TextClassificationPipeline
+from safetensors.torch import load_file  # Import safetensors
 
-#  Move this to the first Streamlit command
+# Set Streamlit page configuration
 st.set_page_config(page_title="Twitter Sentiment Analysis", layout="centered")
 
 # Define label mappings
 id2label = {0: "TROLL", 1: "NEUTRAL", 2: "POSITIVE"}
 label2id = {"TROLL": 0, "NEUTRAL": 1, "POSITIVE": 2}
 
-# Load the tokenizer and model
-MODEL_PATH = "./model_save"  # Update this path if needed
+# Model path
+MODEL_DIR = "./model_save"
+MODEL_WEIGHTS_PATH = f"{MODEL_DIR}/model.safetensors"
+
 st.write("Loading model...")
-tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
-model = AutoModelForSequenceClassification.from_pretrained(MODEL_PATH, num_labels=3, id2label=id2label, label2id=label2id)
 
+# Load tokenizer
+tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR)
 
+# Load model weights
+model_weights = load_file(MODEL_WEIGHTS_PATH)
 
-# Create a pipeline for easy text classification
+# Load model with weights
+model = AutoModelForSequenceClassification.from_pretrained(
+    MODEL_DIR, num_labels=3, id2label=id2label, label2id=label2id, state_dict=model_weights
+)
+
+# Check if GPU is available
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device)
+model.eval()
+
+# Create a text classification pipeline
 pipeline = TextClassificationPipeline(model=model, tokenizer=tokenizer, device=0 if torch.cuda.is_available() else -1)
 
 # Streamlit UI
@@ -35,8 +50,7 @@ if st.button("Analyze Sentiment"):
         confidence = prediction['score']
 
         # Display results
-        st.success(f"Predicted Sentiment: **{sentiment_label}**")
-        3
+        st.success(f"Predicted Sentiment: **{sentiment_label}** ({confidence:.2f} confidence)")
     else:
         st.warning("⚠️ Please enter some text.")
 
