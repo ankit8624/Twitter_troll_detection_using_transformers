@@ -19,13 +19,12 @@ st.write("Loading model...")
 # Load tokenizer
 tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR)
 
-# Load model weights
-model_weights = load_file(MODEL_WEIGHTS_PATH)
+# Load model architecture only (without weights)
+model = AutoModelForSequenceClassification.from_pretrained(MODEL_DIR, num_labels=3, id2label=id2label, label2id=label2id)
 
-# Load model with weights
-model = AutoModelForSequenceClassification.from_pretrained(
-    MODEL_DIR, num_labels=3, id2label=id2label, label2id=label2id, state_dict=model_weights
-)
+# Load model weights manually
+state_dict = load_file(MODEL_WEIGHTS_PATH)
+model.load_state_dict(state_dict)
 
 # Check if GPU is available
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
