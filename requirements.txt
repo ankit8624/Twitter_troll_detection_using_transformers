@@ -4,4 +4,5 @@ pandas
 pillow
 streamlit
 torch
+torchvision
 transformers
