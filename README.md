@@ -3,7 +3,7 @@
 *A deep learning-transformers-based system to classify tweets as troll or not.*
 
 ## 🚀 Live Demo  
-🔗 **Try the app here:** [Your Deployment Link](https://twitter-troll-detection.streamlit.app/)  
+🔗 **Try the app here:** [Deployment Link](https://twitter-troll-detection.streamlit.app/)  
 
 ## 📌 Project Overview  
 - This project uses **DeBERTa** (Deep Bidirectional Encoder Representations from Transformers) to classify tweets into three categories.  
