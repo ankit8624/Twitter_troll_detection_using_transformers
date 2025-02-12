@@ -33,8 +33,7 @@ streamlit run app.py
 
 ## 🎯 Working Demo  
 
-![Input Example](![image](https://github.com/user-attachments/assets/406f715a-d7ec-48b4-9a1c-0ece51860db2)
-)  
+![Input Example](https://imagekit.io/tools/asset-public-link?detail=%7B%22name%22%3A%22screenshot_1739380836484.png%22%2C%22type%22%3A%22image%2Fpng%22%2C%22signedurl_expire%22%3A%222028-02-12T17%3A20%3A40.120Z%22%2C%22signedUrl%22%3A%22https%3A%2F%2Fmedia-hosting.imagekit.io%2F%2F709b2723aa454ca9%2Fscreenshot_1739380836484.png%3FExpires%3D1833988840%26Key-Pair-Id%3DK2ZIVPTIP2VGHC%26Signature%3DaypE9QMeHbkGL0qaJexcEpx7LlEojJ2V5JYI4hhpstLHwEC1G8RibBC3twHTIO9n9q26jZNMdUD6MpP-65W~2XdfQpB0qqm17PIBUu2HM1YPQzdTYRyTjCFZtvBcSg3JbI6X18Q56OHUI9XeRlvwrC~Aj~H-0xupmW23MIeRXpmvhcbbgEtBQChrqkdWCYDX7W~xTxx9ZAgAHifLIomzhpzXhxLNoX0DtGSXEO2S~uNzO8bFdmTKSz~mt2JdAKrZDhT~ZwiihBcfzbUUXyytCy1tkdLu3yCgMa96cHmjuKbqYKT842HRI-3lsoQkDYJbqBsECm2BkfuAgcfoyU2q4g__%22%7D)  
 
 
 ## 📊 Model Performance  
