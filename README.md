@@ -1,6 +1,9 @@
 cat <<EOL > README.md
-# Twitter Troll Detection using DeBERTa  
+# 🐦 Twitter Troll Detection using DeBERTa  
 *A deep learning-based system to classify tweets as troll or not.*
+
+## 🚀 Live Demo  
+🔗 **Try the app here:** [Your Deployment Link](https://twitter-troll-detection.streamlit.app/)  
 
 ## 📌 Project Overview  
 - This project uses **DeBERTa** (Deep Bidirectional Encoder Representations from Transformers) to classify tweets into three categories.  
@@ -11,19 +14,6 @@ cat <<EOL > README.md
 ✅ Built using **Deep Learning** and **NLP**  
 ✅ Interactive **Streamlit web app**  
 ✅ Pre-trained **DeBERTa model**  
-
-## 📂 Project Structure  
-\`\`\`
-📦 Twitter-Troll-Detection
- ┣ 📂 data/           # Dataset (if applicable)
- ┣ 📂 models/         # Pre-trained model
- ┣ 📂 notebooks/      # Jupyter Notebooks (for experimentation)
- ┣ 📂 src/            # Main project code
- ┣ 📂 streamlit_app/  # Streamlit frontend
- ┣ 📜 requirements.txt  # Dependencies
- ┣ 📜 app.py           # Main script for Streamlit
- ┣ 📜 README.md        # Project documentation
-\`\`\`
 
 ## 📦 Installation  
 ### 1️⃣ Clone the repository  
@@ -54,18 +44,23 @@ streamlit run app.py
 ### 🔍 Confusion Matrix  
 ![Confusion Matrix](image.png)  
 
-## 🖼️ Screenshots  
-_(Add screenshots of your Streamlit UI here)_  
+## 🗂 Dataset  
+- **Source**: [Twitter and Reddit Sentimental Analysis Dataset](https://www.kaggle.com/datasets/cosmos98/twitter-and-reddit-sentimental-analysis-dataset)  
+- **Description**: This dataset contains tweets and Reddit posts labeled for sentiment analysis.  
+- **Usage**: Used for training and testing a troll detection model.  
+
+## 🔄 Data Preprocessing  
+- **Text Cleaning**: Removed special characters, links, hashtags, and mentions.  
+- **Lowercasing**: Converted text to lowercase for uniformity.  
+- **Stopword Removal**: Removed common words (e.g., "the", "is") using NLTK.  
+- **Tokenization**: Split text into individual words using SpaCy.  
+- **Lemmatization**: Converted words to their root form.  
+- **Padding & Truncation**: Standardized tweet lengths for model input.  
 
 ## 🧠 Model Details  
-- Model: **DeBERTa**
-- Training: Fine-tuned on a labeled dataset  
-- Performance: **86% accuracy**  
-- Preprocessing: _(Describe text cleaning, tokenization, etc.)_  
-
-## 📜 Dataset  
-- **Source**: _(Mention dataset name/source if publicly available)_  
-- **Preprocessing**: _(Mention cleaning steps like removing stopwords, tokenization, etc.)_  
+- **Model**: DeBERTa (Deep Bidirectional Encoder Representations from Transformers)  
+- **Training**: Fine-tuned on labeled dataset  
+- **Performance**: **86% accuracy**  
 
 ## 🤝 Contribution  
 Want to improve this project? Feel free to fork and submit a pull request!  
