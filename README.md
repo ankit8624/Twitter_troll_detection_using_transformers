@@ -19,7 +19,7 @@
 ## 📦 Installation  
 ### 1️⃣ Clone the repository  
 ```bash
-git clone https://github.com/your-username/Twitter-Troll-Detection.git
+git clone https://github.com/ankit8624/Twitter_troll_detection_using_transformers.git
 cd Twitter_troll_detection_using_transformers
 ```
 ### 2️⃣ Install dependencies  
