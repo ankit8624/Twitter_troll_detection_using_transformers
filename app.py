@@ -42,7 +42,7 @@ if st.button("Analyze Sentiment"):
         confidence = prediction['score']
 
         # Display results
-        st.success(f"Predicted Sentiment: **{sentiment_label}** (Confidence: {confidence:.2f})")
+        st.success(f"Predicted Sentiment: **{sentiment_label}**")
     else:
         st.warning("⚠️ Please enter some text.")
 
