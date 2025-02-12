@@ -1,6 +1,6 @@
 
 # 🐦 Twitter Troll Detection using DeBERTa  
-*A deep learning-based system to classify tweets as troll or not.*
+*A deep learning-transformers-based system to classify tweets as troll or not.*
 
 ## 🚀 Live Demo  
 🔗 **Try the app here:** [Your Deployment Link](https://twitter-troll-detection.streamlit.app/)  
