@@ -17,10 +17,10 @@ cat <<EOL > README.md
 
 ## 📦 Installation  
 ### 1️⃣ Clone the repository  
-\`\`\`bash
+
 git clone https://github.com/your-username/Twitter-Troll-Detection.git  
 cd Twitter-Troll-Detection
-\`\`\`  
+ 
 ### 2️⃣ Install dependencies  
 \`\`\`bash
 pip install -r requirements.txt
