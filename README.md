@@ -67,11 +67,11 @@ streamlit run app.py
 - **Training**: Fine-tuned on labeled dataset  
 - **Performance**: **86% accuracy**  
 
-## 🏁 Conclusion  
+ 
 ## 🏁 Conclusion  
 This project demonstrates the power of **DeBERTa** for troll detection using **deep learning and NLP**. With an accuracy of **86%**, it provides a strong baseline for identifying harmful content on social media.  
 
-Moving forward, improvements can include fine-tuning on larger datasets, exploring alternative transformer models, and optimizing deployment for real-time analysis. This project serves as a step toward enhancing online safety through AI-driven content moderation.  
+Moving forward, improvements can include fine-tuning on larger datasets, exploring alternative transformer models. This project serves as a step toward enhancing online safety through AI-driven content moderation.  
 
 
 Feel free to contribute, share feedback, or extend this work! 🚀  
