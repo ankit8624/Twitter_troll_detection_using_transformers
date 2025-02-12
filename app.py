@@ -37,13 +37,15 @@ if st.button("Analyze Sentiment"):
     if tweet_text.strip():
         # Predict sentiment
         prediction = pipeline(tweet_text)[0]  # Get the first result
-        sentiment_label = prediction['label']
+        label_index = int(prediction['label'].split("_")[-1])  # Extract numeric part
+        sentiment_label = id2label[label_index]  # Convert to human-readable label
         confidence = prediction['score']
 
         # Display results
-        st.success(f"Predicted Sentiment: **{sentiment_label}**")
+        st.success(f"Predicted Sentiment: **{sentiment_label}** (Confidence: {confidence:.2f})")
     else:
         st.warning("⚠️ Please enter some text.")
+
 
 # Footer
 st.markdown("---")
