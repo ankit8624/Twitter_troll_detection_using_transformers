@@ -1,4 +1,4 @@
-cat <<EOL > README.md
+![image](https://github.com/user-attachments/assets/00f4daa9-405f-4c8e-8523-0ed3febb8443)cat <<EOL > README.md
 # 🐦 Twitter Troll Detection using DeBERTa  
 *A deep learning-based system to classify tweets as troll or not.*
 
@@ -30,6 +30,11 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+
+## 🎯 Working Demo  
+
+![Input Example](![image](https://github.com/user-attachments/assets/406f715a-d7ec-48b4-9a1c-0ece51860db2)
+)  
 
 
 ## 📊 Model Performance  
@@ -71,4 +76,3 @@ Want to improve this project? Feel free to fork and submit a pull request!
 For any queries, reach out to me at:  
 📧 **ankit.desale@example.com**  
 📌 [GitHub Profile](https://github.com/your-username)  
-EOL
