@@ -15,19 +15,13 @@ cat <<EOL > README.md
 ✅ Interactive **Streamlit web app**  
 ✅ Pre-trained **DeBERTa model**  
 
+
 ## 📦 Installation  
-##1️⃣ Clone the repository
-
-
-git clone https://github.com/your-username/Twitter-Troll-Detection.git  
+### 1️⃣ Clone the repository  
+```bash
+git clone https://github.com/your-username/Twitter-Troll-Detection.git
 cd Twitter-Troll-Detection
-##2️⃣ Install dependencies
-
-pip install -r requirements.txt
-
-##3️⃣ Run the Streamlit app
-
-streamlit run app.py
+```
 
 
 ## 📊 Model Performance  
