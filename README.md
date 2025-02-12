@@ -43,7 +43,11 @@ streamlit run app.py
 | **Weighted Avg** | 0.87 | 0.86 | 0.87 | 5000 |
 
 ### 🔍 Confusion Matrix  
-![Confusion Matrix](image.png)  
+|       | Predicted: 0 | Predicted: 1 | Predicted: 2 |
+|-------|-------------|-------------|-------------|
+| **Actual: 0** | 2625 | 197 | 178 |
+| **Actual: 1** | 60   | 901 | 39  |
+| **Actual: 2** | 84   | 121 | 795 |
 
 ## 🗂 Dataset  
 - **Source**: [Twitter and Reddit Sentimental Analysis Dataset](https://www.kaggle.com/datasets/cosmos98/twitter-and-reddit-sentimental-analysis-dataset)  
